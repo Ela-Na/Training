@@ -9,7 +9,7 @@ import pandas as pd
 
 from sklearn import linear_model
 from sklearn import metrics
-from sklearn import processing
+from sklearn import preprocessing
 
 def run(fold):
 
@@ -70,10 +70,10 @@ def run(fold):
     
     print(auc)
     
-    if __main__ == "__main__" :
+    if __name__ == "__main__" :
         
         # run function for fold 0, we can replace 0 and run it with any fold number
-        
-        run(0)
+        for fold_ in range(5):
+             run(fold_)
         
         
